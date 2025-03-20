@@ -1,7 +1,14 @@
 {
   "build": {
     "env": {
-      "PNPM_VERSION": "9.15.4"
-    }
+      "PNPM_HOME": "/vercel/.pnpm",
+      "PATH": "/vercel/.pnpm:$PATH"
+    },
+    "commands": [
+      "corepack enable",
+      "corepack prepare pnpm@latest --activate",
+      "pnpm install",
+      "pnpm build"
+    ]
   }
 }

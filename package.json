@@ -2,13 +2,12 @@
   "name": "coscribe",
   "private": true,
   "scripts": {
+    "preinstall": "corepack enable && corepack prepare pnpm@10.6.5 --activate",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css}\"",
     "start": "turbo run start --filter=web"
-
-
   },
   "devDependencies": {
     "prettier": "^3.4.2",
@@ -17,7 +16,7 @@
   },
   "packageManager": "pnpm@10.6.5",
   "engines": {
-    "node": "20.x",
-    "pnpm": ">=9.15.4"
+    "node": ">=20.0.0",
+    "pnpm": ">=10.6.5"
   }
 }

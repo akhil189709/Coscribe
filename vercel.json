@@ -1,6 +1,3 @@
 {
-  "env": {
-    "PNPM_HOME": "/vercel/.pnpm"
-  },
-  "buildCommand": "corepack enable && corepack prepare pnpm@9.15.4 --activate && pnpm install && pnpm run build"
+  "buildCommand": "pnpm run build"
 }

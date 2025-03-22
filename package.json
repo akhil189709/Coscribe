@@ -5,7 +5,9 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css}\"",
+    "start": "turbo run start --filter=web",
+    "postinstall": "pnpm install"
   },
   "devDependencies": {
     "prettier": "^3.4.2",
@@ -14,7 +16,7 @@
   },
   "packageManager": "pnpm@9.15.4",
   "engines": {
-  "node": ">=18",
-  "pnpm": ">=9.15.4"
-}
+    "node": ">=18",
+    "pnpm": ">=9.15.4"
+  }
 }

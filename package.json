@@ -6,8 +6,8 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css}\"",
-    "start": "turbo run start --filter=web",
-    "postinstall": "pnpm install"
+    "start": "turbo run start --filter=web"
+
 
   },
   "devDependencies": {

@@ -4,11 +4,7 @@
       "PNPM_HOME": "/vercel/.pnpm",
       "PATH": "/vercel/.pnpm:$PATH"
     },
-    "commands": [
-      "corepack enable",
-      "corepack prepare pnpm@latest --activate",
-      "pnpm install",
-      "pnpm build"
-    ]
+    "installCommand": "corepack enable && corepack prepare pnpm@9.15.4 --activate && pnpm install",
+    "buildCommand": "pnpm run build"
   }
 }
